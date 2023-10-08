@@ -1,0 +1,128 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    background: #f1f1f5;
+    padding: 0;
+    margin: 0;
+}
+
+.fs-7 {
+    font-size: 85%;
+}
+
+#f {
+    position: absolute;
+    background-color:#f1f1f5;
+    font-size: 80%;
+    z-index: 9999;
+    color: #124270;
+    top: 0rem;
+    width: 100%;
+    text-align: center;
+    /* display: none; */
+    padding: 0.5rem;
+    /* margin-top: 2rem; */
+}
+#f a {
+    margin: 0 0.5rem;
+}
+
+/*
+mastodon 2b90d9
+oscuro 124270
+mas oscuro 072c4f
+*/
+
+.btn-own {
+    background: #2b90d9;
+    color: #f1f1f5;
+}
+.btn-own:focus,
+t.btn-own:hover,
+.btn-own:active,
+.btn-own:target {
+    background: #124270 !important;
+    color: #f1f1f5 !important;
+}
+
+#share,#create,#instance {
+    max-width: 30em;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 100%;
+}
+
+#instance,#share,#create {
+    align-items: center;
+}
+#instance {
+    height: auto;
+    padding-bottom: 5rem;
+    justify-content: start;
+}
+
+#share > div,
+#create > div,
+#instance > div {
+    width: 100%;
+}
+
+#landing > *,#create > * {
+    margin-bottom: 1rem;
+}
+
+#share img,
+#instance img,
+#create img {
+    width: 4em;
+}
+
+#nav {
+    max-width: 50em;
+    margin: 0 auto;
+    display: flex;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+#nav img {
+    width: 2.3em;
+}
+
+#results_header {
+    border-bottom: 1px solid #a6c0d9;
+    padding:1rem;
+    background: #a6c0d940;
+}
+
+#results a {
+    color: #124270;
+}
+
+#results {
+    max-width: 52em;
+    margin:0 auto;
+}
+
+#results .card {
+    border-color: #a6c0d9 !important;
+}
+
+#results .card-footer {
+    border-top: 1px solid #a6c0d9;
+    background: #a6c0d940;
+}
+
+#results > .card {
+    margin-top: 1rem;
+}

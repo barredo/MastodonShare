@@ -1,0 +1,7 @@
+{
+ "minimum-stability": "dev",
+ "require": {
+  "colorfield/mastodon-api": "dev-master",
+  "thecodingcompany/php-mastodon": "dev-master"
+ }
+}
