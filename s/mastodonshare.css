@@ -33,12 +33,19 @@ oscuro 124270
 mas oscuro 072c4f
 */
 
+.border-own {
+    border-color: #2b90d9 !important;
+}
+.border-translucent {
+    border-color: rgba(0, 0, 0, 0.175) !important;
+}
+
 .btn-own {
     background: #2b90d9;
     color: #f1f1f5;
 }
 .btn-own:focus,
-t.btn-own:hover,
+.btn-own:hover,
 .btn-own:active,
 .btn-own:target {
     background: #124270 !important;

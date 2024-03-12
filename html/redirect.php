@@ -24,6 +24,13 @@ if(only_instance($_COOKIE['instance']) == $_COOKIE['instance']) {
     $share = trim($_GET['text']);
   }
 
+
+  if(!empty($_SESSION['note'])) {
+    $share .= "\n\n".trim($_SESSION['note']);
+  } elseif(!empty($_GET['note'])) {
+    $share .= "\n\n".trim($_GET['note']);
+  }
+
   if(!empty($share)) {
     $url = $url.'/share?text='.urlencode($share);
   }

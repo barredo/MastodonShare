@@ -781,6 +781,9 @@ function clean_user($string) {
 	return preg_replace('/[^a-z0-9\_]/','',$string);
 }
 function clean_instance($string) {
+	if(filter_var($string, FILTER_VALIDATE_URL)) {
+		$string = parse_url($string,PHP_URL_HOST);
+	}
 	$string = strtolower(trim($string));
 	return preg_replace('/[^a-z0-9\-\.]/','',$string);
 }

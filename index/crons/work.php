@@ -19,7 +19,7 @@ sleep(rand(0,15));
 $start = time();
 
 if($num == false) {
-    $crawler = db::fetch("select * from `crawl` where `indexed` < 3 limit 1000");
+    // $crawler = db::fetch("select * from `crawl` where `indexed` < 3 limit 1000");
 } else {
     $crawler = db::fetch("select * from `crawl` where `indexed` < 3 and `index` like '%".$num."' limit 10");
 }

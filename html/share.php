@@ -11,7 +11,8 @@ echo '<div class="card-header fw-bold">Sharing on Mastodon:</div>';
 echo '<div class="card-body">';
 echo '<p class="card-text">';
 if(!empty($_SESSION['text'])) {
-  echo trim(urldecode($_SESSION['text']));
+  // echo trim(urldecode($_SESSION['text']));
+  echo nl2br(trim(urldecode($_SESSION['text'])));
   if(!empty($_SESSION['url'])) {
     echo " ";
   }

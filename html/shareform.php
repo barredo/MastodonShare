@@ -11,13 +11,16 @@ echo '<div class="card-header fw-bold">Sharing on Mastodon:</div>';
 echo '<div class="card-body">';
 echo '<p class="card-text">';
 if(!empty($_SESSION['text'])) {
-  echo trim(urldecode($_SESSION['text']));
+  echo nl2br(trim(urldecode($_SESSION['text'])));
   if(!empty($_SESSION['url'])) {
     echo " ";
   }
 }
 if(!empty($_SESSION['url'])) {
-  echo trim(urldecode($_SESSION['url']));
+  echo "<br/><br/>".trim(urldecode($_SESSION['url']));
+}
+if(!empty($_SESSION['note'])) {
+  echo "<br/><br/>".trim(urldecode($_SESSION['note']));
 }
 echo '</p>';
 echo '</div></div>';

@@ -31,7 +31,7 @@ if(!empty($_GET['set_instance'])) {
 	exit;
 } elseif($_GET['s'] === 'share') {
 	// p($_SERVER);
-	// exit;	
+	// exit;
 	if(empty($_GET['url'])) {
 		$_GET['url']  = $_SERVER['HTTP_REFERER'];
 		// $_GET['s']  = $_SERVER['HTTP_REFERER'];
@@ -56,8 +56,9 @@ if(empty($_GET['url']) && empty($_GET['text'])) {
 } else {
 
 	session_start();
-	$_SESSION['text'] = $_GET['text'];
-	$_SESSION['url']  = $_GET['url'];
+	$_SESSION['text'] 	= htmlspecialchars(($_GET['text']));
+	$_SESSION['url'] 	= htmlspecialchars(($_GET['url']));
+	$_SESSION['note'] 	= htmlspecialchars(($_GET['note']));
 
 	if(empty($instance)) {
 		$_GET['s'] = 'shareform';
