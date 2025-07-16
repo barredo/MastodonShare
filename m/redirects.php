@@ -1,4 +1,8 @@
 <?php
+/**
+ * Helpers for performing HTTP redirects based on conditions, for
+ * example when certain bots visit the service.
+ */
 class r {
 	static function google($to = null) {
 		if(stripos($_SERVER['HTTP_USER_AGENT'],'googlebot') !== false) {

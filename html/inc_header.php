@@ -1,4 +1,7 @@
 <?php
+/**
+ * Common HTML header used by all pages. Loads stylesheets and meta tags.
+ */
 
 echo '<!DOCTYPE html>';
 echo '<html>';

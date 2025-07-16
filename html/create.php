@@ -1,4 +1,8 @@
 <?php
+/**
+ * Form for entering the text and URL to share when an instance is
+ * already known from a cookie.
+ */
 include(HTML.'inc_header.php');
 
 echo '<form method="get" action="'.URL.'" id="create" class="px-3">';

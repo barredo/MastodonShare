@@ -1,4 +1,12 @@
 <?php
+/**
+ * Front controller for MastodonShare.
+ *
+ * Determines which page to display depending on the provided GET
+ * parameters and the user's stored instance cookie.  When the user
+ * has supplied both text and url the script redirects to the
+ * appropriate instance's share endpoint.
+ */
 require_once 'm/config.php';
 
 $instance = null;

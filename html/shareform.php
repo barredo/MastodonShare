@@ -1,4 +1,8 @@
 <?php
+/**
+ * Similar to share.php but also shows any extra note text that was
+ * captured.  Used when users must select an instance before sharing.
+ */
 include(HTML.'inc_header.php');
 
 // https://mastodon.social/share?text=Mastodon%20Share%20https%3A%2F%2Fmastodonshare.com%2F%3Fs%3Dresults%26url%3Dhttps%253A%252F%252Fcuonda.com%252Fquinto-nivel%252Ffeed

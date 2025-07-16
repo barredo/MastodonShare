@@ -1,4 +1,8 @@
 <?php
+/**
+ * Page where a user specifies the Mastodon instance to use. The choice
+ * will be saved in a cookie for future visits.
+ */
 include(HTML.'inc_header.php');
 
 echo '<form method="get" action="'.URL.'" id="instance" class="px-3">';

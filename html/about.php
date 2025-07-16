@@ -1,4 +1,7 @@
 <?php
+/**
+ * Displays the "about" information explaining how MastodonShare works.
+ */
 
 include('inc_header.php');
 echo '<div id="instance">';

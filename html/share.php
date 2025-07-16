@@ -1,4 +1,8 @@
 <?php
+/**
+ * Form displayed when the user has parameters but no stored instance.
+ * Allows the visitor to enter the Mastodon instance before redirecting.
+ */
 include(HTML.'inc_header.php');
 
 // https://mastodon.social/share?text=Mastodon%20Share%20https%3A%2F%2Fmastodonshare.com%2F%3Fs%3Dresults%26url%3Dhttps%253A%252F%252Fcuonda.com%252Fquinto-nivel%252Ffeed

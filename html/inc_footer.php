@@ -1,4 +1,7 @@
 <?php
+/**
+ * Footer markup shared across pages.
+ */
 
 // echo '</div>'; // container
 // echo '</div>'; // main

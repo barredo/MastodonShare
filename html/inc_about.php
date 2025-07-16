@@ -1,4 +1,8 @@
 <?php
+/**
+ * Internal partial that renders the bulk of the about text used on
+ * several pages.
+ */
 
 echo '<div class="card mt-5 fs-7">';
 echo '<div class="card-header fw-bold">How to use MastodonShare</div>';

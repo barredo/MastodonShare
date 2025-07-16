@@ -1,4 +1,8 @@
 <?php
+/**
+ * After the instance is known this script builds the final share URL and
+ * redirects the user to their Mastodon instance.
+ */
 
 // p($_COOKIE);
 // p($_SESSION);

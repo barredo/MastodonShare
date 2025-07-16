@@ -1,4 +1,9 @@
 <?php
+/**
+ * Collection of miscellaneous helper functions used throughout the
+ * application. Many originate from earlier projects and are kept for
+ * compatibility.
+ */
 // require_once ROOT.'lib/twitteroauth/autoload.php';
 // use Abraham\TwitterOAuth\TwitterOAuth;
 

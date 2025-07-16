@@ -1,4 +1,8 @@
 <?php
+/**
+ * Lightweight database helper used by the application.
+ * Contains static methods for common MySQL operations.
+ */
 
 class db {
 	static function conectar() {

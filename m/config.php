@@ -1,4 +1,8 @@
 <?php
+/**
+ * Basic configuration and common includes for MastodonShare.
+ * Adjust the constants below when deploying to your own server.
+ */
 $_GET['include_config'] = 1;
 
 define('URL','https://mastodonshare.com/');

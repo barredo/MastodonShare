@@ -1,4 +1,7 @@
 <?php
+/**
+ * Utility functions that output bits of HTML used by the old front end.
+ */
 function magic_form($a = array()) {
 	$r  = '<form method="post" action="'.URL.'?s=magic" class="media-quote">';
 	$r .= '<div class="form-group">';

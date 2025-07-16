@@ -1,4 +1,7 @@
 <?php
+/**
+ * Legacy display helpers kept for backwards compatibility.
+ */
 function magic_form($a = array()) {
 	$r  = '<form method="post" action="'.URL.'?s=magic" class="media-quote">';
 	$r .= '<div class="form-group">';
