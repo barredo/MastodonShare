@@ -2,10 +2,6 @@
 
 :root{
     /* Light theme (default) */
-    --bg-main:            #f1f1f5;
-    --bg-subtle:          #a6c0d940;
-    --text-main:          #124270;
-    --border-main:        #a6c0d9;
     --border-own:         #2b90d9;
     --border-trans:       rgba(0,0,0,0.175);
     --brand:              #2b90d9;
@@ -15,10 +11,6 @@
    OR when you add a `.dark` class to <html>. */
 @media (prefers-color-scheme: dark) {
     :root{
-        --bg-main:        #1e1e20;
-        --bg-subtle:      #2a2a2e;
-        --text-main:      #d1e7ff;
-        --border-main:    #3a5069;
         --border-own:     #329af0;
         --border-trans:   rgba(255,255,255,0.175);
         --brand:          #329af0;
@@ -27,11 +19,15 @@
 
 /* ---------- 2.  Base layout ---------- */
 
+:root{
+    color-scheme: light dark;
+}
+
 body,html{
     height:100%;
     width:100%;
-    background:var(--bg-main);
-    color:var(--text-main);
+    background:canvas;
+    color:canvasText;
     padding:0;
     margin:0;
 }
@@ -45,27 +41,30 @@ body,html{
     top:0;
     width:100%;
     z-index:9999;
-    background:var(--bg-main);
-    color:var(--text-main);
     font-size:80%;
     text-align:center;
     padding:.5rem;
 }
 #f a{margin:0 .5rem;}
 
-.border-own{border-color:var(--border-own)!important;}
-.border-translucent{border-color:var(--border-trans)!important;}
+.form-control, .form-control:focus{
+    background-color: Field;
+    color: FieldText;
+    margin-right: 1px;
+}
 
 .btn-own{
-    background:var(--brand);
-    color:var(--bg-main);
+    background-color:ButtonFace;
+    color:ButtonText;
+    border: 1px solid transparent
 }
 .btn-own:focus,
 .btn-own:hover,
 .btn-own:active,
 .btn-own:target{
-    background:var(--brand-hover)!important;
-    color:var(--bg-main)!important;
+    background-color:ButtonFace;
+    color:ButtonText;
+    border: 1px solid buttonBorder
 }
 
 #share,#create,#instance{
@@ -128,3 +127,20 @@ body,html{
     background:var(--bg-subtle);
 }
 #results>.card{margin-top:1rem;}
+
+.card-header{
+    border-color: ButtonBorder;
+    background-color: ButtonFace;
+}
+.card{
+    background-color: Canvas;
+}
+.border-top{
+    border-top:none !important;
+}
+a, a:hover{
+    color: LinkText;
+}
+a:visited{
+    color: VisitedText;
+}

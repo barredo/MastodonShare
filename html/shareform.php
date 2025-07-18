@@ -30,7 +30,7 @@ echo '<input type="hidden" name="text" class="form-control" value="'.trim(urldec
 echo '<input type="hidden" name="url" class="form-control" value="'.trim(urldecode($_SESSION['url'])).'">';
 
 echo '<div class="input-group">';
-  echo '<input type="text" name="set_instance" class="form-control" placeholder="your mastodon instance">';
+  echo '<input type="text" name="set_instance" class="form-control" placeholder="Your mastodon instance">';
 
   echo '<button class="btn btn-own" type="submit">';
   echo '<i class="fa fa-check-circle"></i>';

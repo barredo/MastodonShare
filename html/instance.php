@@ -10,7 +10,7 @@ echo '<a href="'.URL.'" class="mb-3"><img alt="'.APP_NAME.'" src="'.URL.'s/img/m
 
 
 echo '<div class="input-group">';
-  echo '<input type="text" name="set_instance" class="form-control" placeholder="your mastodon instance">';
+  echo '<input type="text" name="set_instance" class="form-control" placeholder="Your mastodon instance">';
 
   echo '<button class="btn btn-own" type="submit">';
   echo '<i class="fa fa-check-circle"></i>';
